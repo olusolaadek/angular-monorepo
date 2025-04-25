@@ -1,6 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
@@ -10,15 +12,27 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-monorepo/orders": ["libs/orders/src/index.ts"],
-      "@angular-monorepo/products": ["libs/products/src/index.ts"],
-      "@angular-monorepo/ui": ["libs/shared/ui/src/index.ts"]
+      "@angular-monorepo/orders": [
+        "libs/orders/src/index.ts"
+      ],
+      "@angular-monorepo/products": [
+        "libs/products/src/index.ts"
+      ],
+      "@angular-monorepo/ui": [
+        "libs/shared/ui/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }
